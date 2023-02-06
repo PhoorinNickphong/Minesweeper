@@ -4,11 +4,20 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 
+user_database = [
+    dict(username="admin", password="adminadmin"),
+    dict(username="Phoorin", password="3799"),
+]
 
 class HelloWorldApp(App):
     def on_login(self, instance):
-        print(self.username_input.text, self.password_input.text)
-
+        for user in user_database:
+            if (
+                user["username"] == self.username_input.text.strip()
+                and user["password"] == self.password_input.text
+            ):
+                print("Hello", self.username_input.text)
+                break
 
     def build(self):
         layout = BoxLayout(orientation="vertical")
@@ -28,7 +37,6 @@ class HelloWorldApp(App):
 
         layout.add_widget(Button(text="Submit", on_press=self.on_login))
         return layout
-
 
 if __name__ == "__main__":
     HelloWorldApp().run()
