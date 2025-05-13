@@ -54,14 +54,13 @@ python main.py
 
 ---
 
-## 📸 Screenshots (optional)
+## 📸 Screenshots
 
-> Place your screenshots in the `/Screen` folder and reference like below:
+> Preview of the game interface:
 
-```markdown
-![Game Start](image\Screenshot 2025-05-13 132136.png)
-![In Game](image\Screenshot 2025-05-13 132233.png)
-```
+![Game Start](image/Screenshot%202025-05-13%20132136.png)  
+![In Game](image/Screenshot%202025-05-13%20132233.png)
+
 
 ---
 
